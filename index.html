@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CANDIE MONITOR</title>
+    <link rel="stylesheet" href="style.css">
+   <style>
+    #editBtn{
+      display: none;
+    }
+   </style>
+  </head>
+  <body>
+    <header>
+      <h1>JS For Beginners</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add Candies</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Candie Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="description">Candie Description:</label>
+          <input type="text" id="description">
+        </div>
+        <div>
+          <label for="quantity">Quantity Remaining:</label>
+          <input type="number" id="quantity">
+        </div>
+        <input class="btn" id="btn" type="submit" value="Add Candies">
+       
+        <button class="btn" id="editBtn" >Updates Candies</button>
+      </form>
+
+      <ul id="candieList"></ul>
+    </section>
+    
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+  </body>
+</html>
